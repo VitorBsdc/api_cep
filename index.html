@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adicionando o link para o css do bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Consulta CEP</title>
+</head>
+<body>
+    <!-- Crie a div com a seguinte class -->
+    <div class="container">
+        <h1>Consultando CEP com  ViaCEP</h1>
+        <form>
+            <!-- Insira os parametros abaixo com o comando "div.form-group*5>label+input.form-control+small"; depois pressione enter -->
+            <!-- Posteriormente, preencha os campos como convém: -->
+            <div class="form-group">
+                <label for="cep">CEP</label><input type="text" class="form-control" id="cep">
+                <small>00000-000</small>
+            </div>
+            <div class="form-group">
+                <label for="logradouro">Logradouro</label><input type="text" class="form-control" id="logradouro">
+                <small>Rua, Avenida, Travessa, etc</small>
+            </div>
+            <div class="form-group">
+                <label for="bairro">Bairro</label><input type="text" class="form-control" id="bairro">
+                <small>Bairro</small>
+            </div>
+            <div class="form-group">
+                <label for="localidade">Localiadade</label><input type="text" class="form-control" id="localidade">
+                <small>Cidade</small>
+            </div>
+            <div class="form-group">
+                <label for="uf">UF</label><input type="text" class="form-control" id="uf">
+                <small>Estado</small>
+            </div>
+        </form>
+    </div>
+</body>
+<!-- Script com o path para o main.js -->
+<script src="src/js/main.js"></script>
+</html>
